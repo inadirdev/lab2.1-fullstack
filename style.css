@@ -1,7 +1,7 @@
 /* ================================================================
-   LAB 2 — STUDENT PORTFOLIO STYLESHEET
-   Covers: Flexbox, Transitions, Transforms, Filters,
-           Positioning, Pseudo-elements, Responsive Design
+   STUDENT PORTFOLIO — STYLESHEET
+   Concepts: Flexbox, Transitions, Transforms, Filters,
+             Positioning, Pseudo-elements, Responsive Design
    ================================================================ */
 
 /* ========== GLOBAL RESET ========== */
@@ -36,7 +36,7 @@ h2 {
 }
 
 /* ================================================================
-   TASK 5: NAVIGATION (uses Flexbox)
+   NAVIGATION
    ================================================================ */
 .portfolio-nav {
     display: flex;
@@ -74,7 +74,7 @@ h2 {
 }
 
 /* ================================================================
-   TASK 1: RESPONSIVE STUDENT PROFILE (Flexbox)
+   STUDENT PROFILE
    ================================================================ */
 .profile-section {
     background: white;
@@ -145,7 +145,7 @@ h2 {
     font-weight: 500;
 }
 
-/* Task 1 — Mobile: stack image & info vertically */
+/* Mobile: stack profile image & info vertically */
 @media (max-width: 600px) {
     .profile-flex {
         flex-direction: column;
@@ -166,7 +166,7 @@ h2 {
 }
 
 /* ================================================================
-   TASK 2: PROJECT CARDS (Flexbox + Transition + Transform + Filter)
+   PROJECT CARDS
    ================================================================ */
 .projects-section {
     background: white;
@@ -192,11 +192,10 @@ h2 {
     border: 1px solid #e2e8f0;
     display: flex;
     flex-direction: column;
-    /* Transition for hover effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover: card moves up + shadow grows */
+/* Hover: card lifts up */
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
@@ -207,11 +206,10 @@ h2 {
     height: 170px;
     object-fit: cover;
     display: block;
-    /* Transition for filter change */
     transition: filter 0.3s ease;
 }
 
-/* CSS Filter applied to first & last project images */
+/* Filter applied to first & last project images */
 .card:first-child .card-img {
     filter: grayscale(0.7) brightness(0.9);
 }
@@ -220,7 +218,7 @@ h2 {
     filter: sepia(0.4) saturate(1.2);
 }
 
-/* Remove/change filter when hovering the card */
+/* Remove filter when hovering the card */
 .card:hover .card-img {
     filter: grayscale(0) brightness(1) sepia(0) saturate(1);
 }
@@ -265,7 +263,7 @@ h2 {
 }
 
 /* ================================================================
-   TASK 3: ACHIEVEMENT CARD (Positioning + Pseudo-elements)
+   ACHIEVEMENT CARD (Positioning + Pseudo-elements)
    ================================================================ */
 .achievement-section {
     background: white;
@@ -275,8 +273,7 @@ h2 {
 }
 
 .achievement-card {
-    /* Required: position relative */
-    position: relative;
+    position: relative;                 /* required */
     background: linear-gradient(145deg, #ffffff, #f8fafc);
     border-radius: 1.5rem;
     padding: 2rem 2rem 1.8rem 2rem;
@@ -356,8 +353,7 @@ h2 {
 }
 
 /* ================================================================
-   TASK 4: BOOTSTRAP DASHBOARD — only styling (not layout)
-   Layout uses Bootstrap flex utility classes in HTML
+   DASHBOARD (Layout via Bootstrap Flex utilities in HTML)
    ================================================================ */
 .dashboard-section {
     background: white;
@@ -405,7 +401,7 @@ h2 {
 }
 
 /* ================================================================
-   TASK 5: FOOTER
+   FOOTER
    ================================================================ */
 .portfolio-footer {
     background: #0f172a;
